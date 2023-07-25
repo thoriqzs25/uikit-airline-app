@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		358F269B2A6FB362007587F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358F269A2A6FB362007587F3 /* AppDelegate.swift */; };
 		358F269D2A6FB362007587F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358F269C2A6FB362007587F3 /* SceneDelegate.swift */; };
-		358F269F2A6FB362007587F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358F269E2A6FB362007587F3 /* ViewController.swift */; };
-		358F26A22A6FB362007587F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358F26A02A6FB362007587F3 /* Main.storyboard */; };
+		358F269F2A6FB362007587F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358F269E2A6FB362007587F3 /* HomeViewController.swift */; };
 		358F26A42A6FB363007587F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 358F26A32A6FB363007587F3 /* Assets.xcassets */; };
 		358F26A72A6FB363007587F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358F26A52A6FB363007587F3 /* LaunchScreen.storyboard */; };
+		358F26B02A6FBDF5007587F3 /* AirlineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358F26AF2A6FBDF5007587F3 /* AirlineModel.swift */; };
+		358F26B22A6FBF7F007587F3 /* PassengerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358F26B12A6FBF7F007587F3 /* PassengerModel.swift */; };
+		358F26B52A6FE61D007587F3 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358F26B42A6FE61D007587F3 /* APICaller.swift */; };
+		358F26B82A6FEE3B007587F3 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358F26B72A6FEE3B007587F3 /* AuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		358F26972A6FB362007587F3 /* Airline App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airline App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		358F269A2A6FB362007587F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		358F269C2A6FB362007587F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		358F269E2A6FB362007587F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		358F26A12A6FB362007587F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		358F269E2A6FB362007587F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		358F26A32A6FB363007587F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		358F26A62A6FB363007587F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		358F26A82A6FB363007587F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		358F26AF2A6FBDF5007587F3 /* AirlineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineModel.swift; sourceTree = "<group>"; };
+		358F26B12A6FBF7F007587F3 /* PassengerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerModel.swift; sourceTree = "<group>"; };
+		358F26B42A6FE61D007587F3 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		358F26B72A6FEE3B007587F3 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +63,33 @@
 			isa = PBXGroup;
 			children = (
 				358F269A2A6FB362007587F3 /* AppDelegate.swift */,
+				358F26B32A6FE60B007587F3 /* Managers */,
 				358F269C2A6FB362007587F3 /* SceneDelegate.swift */,
-				358F269E2A6FB362007587F3 /* ViewController.swift */,
-				358F26A02A6FB362007587F3 /* Main.storyboard */,
+				358F26AE2A6FBD6D007587F3 /* Models */,
+				358F269E2A6FB362007587F3 /* HomeViewController.swift */,
 				358F26A32A6FB363007587F3 /* Assets.xcassets */,
 				358F26A52A6FB363007587F3 /* LaunchScreen.storyboard */,
 				358F26A82A6FB363007587F3 /* Info.plist */,
 			);
 			path = "Airline App";
+			sourceTree = "<group>";
+		};
+		358F26AE2A6FBD6D007587F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				358F26AF2A6FBDF5007587F3 /* AirlineModel.swift */,
+				358F26B12A6FBF7F007587F3 /* PassengerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		358F26B32A6FE60B007587F3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				358F26B42A6FE61D007587F3 /* APICaller.swift */,
+				358F26B72A6FEE3B007587F3 /* AuthManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +102,7 @@
 				358F26932A6FB362007587F3 /* Sources */,
 				358F26942A6FB362007587F3 /* Frameworks */,
 				358F26952A6FB362007587F3 /* Resources */,
+				358F26B62A6FE9BF007587F3 /* SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -127,34 +153,50 @@
 			files = (
 				358F26A72A6FB363007587F3 /* LaunchScreen.storyboard in Resources */,
 				358F26A42A6FB363007587F3 /* Assets.xcassets in Resources */,
-				358F26A22A6FB362007587F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		358F26B62A6FE9BF007587F3 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftformat >/dev/null; then\n    swiftformat \"${SRCROOT}\"\nelse\n    echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		358F26932A6FB362007587F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				358F269F2A6FB362007587F3 /* ViewController.swift in Sources */,
+				358F269F2A6FB362007587F3 /* HomeViewController.swift in Sources */,
+				358F26B82A6FEE3B007587F3 /* AuthManager.swift in Sources */,
+				358F26B52A6FE61D007587F3 /* APICaller.swift in Sources */,
 				358F269B2A6FB362007587F3 /* AppDelegate.swift in Sources */,
+				358F26B02A6FBDF5007587F3 /* AirlineModel.swift in Sources */,
 				358F269D2A6FB362007587F3 /* SceneDelegate.swift in Sources */,
+				358F26B22A6FBF7F007587F3 /* PassengerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		358F26A02A6FB362007587F3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				358F26A12A6FB362007587F3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		358F26A52A6FB363007587F3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +334,6 @@
 				INFOPLIST_FILE = "Airline App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +361,6 @@
 				INFOPLIST_FILE = "Airline App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
